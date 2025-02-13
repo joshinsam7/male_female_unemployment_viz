@@ -9,16 +9,25 @@
     <body>
         <div class="container">
             <h1 class="text-center">Homework #2: D3 Lolli</h1>
-            <h3 class="text-center">Your Name - Your Email</h3>
+            <h3 class="text-center">Joshin Sam - jbsam@asu.edu</h3>
             <h3 class="text-center">Female vs Male employment rate in various countries</h3>
             <div class="row">
                 <div class="col-1">Country: </div>
                 <div class="col-3">
                     <!-- add your select here-->
+                    <select id="countrySelect" class="form-select" onchange="drawLolliPopChart()">
+                        <option value="Angola">Angola</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                    </select>
+                    
                 </div>
             </div>
             <div id="myDataVis">
                 <!-- create svg here -->
+                <svg width="1000" height="600"></svg>
             </div>
             <h4>Data Abstraction</h4>
             <p id="dataAbstractionSection">
